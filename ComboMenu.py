@@ -83,7 +83,7 @@ def ketchup():
   #tells the user what was added to their order
   total_cost_list.append(index * 0.25)
   #adds the ketchup cost to the total cost list
-  final_order_list.append(str(index) + "ketchup packets")
+  final_order_list.append(str(index) + " Ketchup Packets")
   #adds the ketchup to the final order lsit
   type_list.append(4)
   #adds ketchup to the type list
