@@ -6,4 +6,5 @@ Max Gombos
 
 #exec(open("step5.py").read())
 #exec(open("ComboMenu.py").read())
-exec(open("321_ComboMenuLists_Step19_Gombos.py").read())
+#exec(open("321_ComboMenuLists_Step19_Gombos.py").read())
+exec(open("321_ComboMenuLists_Step20_Gombos.py").read())
