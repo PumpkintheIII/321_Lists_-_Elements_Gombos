@@ -5,18 +5,23 @@ type_list = [] #list of types of items in user's order, used in the order functi
 print("Welcome!")
 def menu():
   print("What would you like to order?\n  1: Sandwich\n  2: Drink\n  3: French Fries\n  4: Ketchup Packets\n  5: Check Out")
-  welcome = int(input("Please enter the number corresponding with the item you would like. (1, 2, 3, 4, or 5)"))
+  welcome = input("Please enter the number corresponding with the item you would like. (1, 2, 3, 4, or 5)")
   #asks the user what they would like to add to their order, then the if-elif statement below calls the corresponding function depending on what the user added to their order
-  if (welcome == 1):
-    sandwich()
-  elif (welcome == 2):
-    drink()
-  elif (welcome == 3):
-    fries()
-  elif (welcome == 4):
-    ketchup()
-  elif (welcome == 5):
-    order()
+  if (welcome == "1" or welcome == "2" or welcome == "3" or welcome == "4" or welcome == "5"):
+    welcome = int(welcome)
+    if (welcome == 1):
+      sandwich()
+    elif (welcome == 2):
+      drink()
+    elif (welcome == 3):
+      fries()
+    elif (welcome == 4):
+      ketchup()
+    elif (welcome == 5):
+      order()
+  else:
+    print("Please enter a valid response!")
+    menu()
 def sandwich():
   sandwich_list = ["Chicken Sandwich", "Beef Sandwich", "Tofu Sandwich"]
   price_list = [5.25, 6.25, 5.75]
